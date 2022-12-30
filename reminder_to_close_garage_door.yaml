@@ -19,7 +19,7 @@ blueprint:
     first_timer:
       name: 'First timer'
       description: 'The first notification timer (in minutes).'
-      default: 10
+      default: 15
       selector: 
         number:
           min: 1
@@ -29,7 +29,7 @@ blueprint:
     second_timer:
       name: 'Second timer'
       description: 'The second notification timer (in minutes).'
-      default: 15
+      default: 30
       selector: 
         number:
           min: 1
