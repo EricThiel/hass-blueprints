@@ -50,16 +50,16 @@ blueprint:
 trigger:
 - platform: state
   entity_id: !input contact_sensor
-  from: 'closed'
-  to: 'opened'
+  from: 'off'
+  to: 'on'
   for:
     hours: 0
     minutes: !input first_timer
     seconds: 0
 - platform: state
   entity_id: !input contact_sensor
-  from: 'closed'
-  to: 'opened'
+  from: 'off'
+  to: 'on'
   for:
     hours: 0
     minutes: !input second_timer
@@ -70,7 +70,7 @@ trigger:
 condition:
 - condition: state
   entity_id: !input contact_sensor
-  state: 'opened'
+  state: 'on'
 
 # Send a notification to the mobile device. 
 action:
