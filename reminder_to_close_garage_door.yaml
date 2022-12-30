@@ -6,8 +6,8 @@
 #
 
 blueprint:
-  name: Notification to close a door
-  description: Notification to close doors after a specific amount of time
+  name: Notification to close a garage door
+  description: Notification to close garage doors after a specific amount of time
   domain: automation
   input: 
     contact_sensor: 
